@@ -9,7 +9,7 @@ export AWS_REGION="us-east-1"
 export ENVIRONMENT="staging"
 export WISHABI_ENVIRONMENT="development"
 export ECS_CLUSTER_STG="services-ecs-stg"
-export ECS_SERVICE_STG=$SERVICE_NAME"-stg"
+export ECS_SERVICE_STG=${SERVICE_NAME}-stg
 
 # ENV Variables that are used the the platform-service-deploy.sh script
 export ECS_CLUSTER=$ECS_CLUSTER_STG
