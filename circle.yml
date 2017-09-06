@@ -22,7 +22,7 @@ deployment:
       - chmod +x ./deploy/production.sh
       - ./deploy/production.sh
   staging:
-    branch: staging
+    branch: wishabidev-staging
     commands:
-      - chmod +x ./deploy/staging.sh
-      - ./deploy/staging.sh
+      - chmod +x ./deploy/wishabidev-staging.sh
+      - ./deploy/wishabidev-staging.sh
