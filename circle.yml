@@ -1,0 +1,28 @@
+# https://circleci.com/docs/1.0/configuration/
+
+machine:
+  node:
+    version: 8.2.0
+
+  environment:
+    TEST_ENV_VAR: test
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+    - npm test
+
+deployment:
+  production:
+    branch: production
+    commands:
+      - chmod +x ./deploy/production.sh
+      - ./deploy/production.sh
+  staging:
+    branch: staging
+    commands:
+      - chmod +x ./deploy/staging.sh
+      - ./deploy/staging.sh

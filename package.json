@@ -1,0 +1,29 @@
+{
+  "name": "hello-world-node",
+  "version": "1.0.0",
+  "description": "Hello World from the Flipp Platform via Node.JS",
+  "main": "index.js",
+  "config": {
+    "container": "hello-world-node",
+    "tag": "b",
+    "repo_endpoint": "280159221453.dkr.ecr.us-east-1.amazonaws.com",
+    "region": "us-east-1",
+    "cluster": "flipp-platform-dev",
+    "service": "hello-world-node-b"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": "mocha",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "request": "^2.81.0"
+  }
+}
