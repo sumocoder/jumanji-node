@@ -1,8 +1,10 @@
 cd ./deploy
 
-export SERVICE_NAME="jumanji-node"
-export SERVICE_TOKEN="0CC3D64B-BA4E-43C3-A483-9B36556EAF73"
-export ECR_REPOSITORY="280159221453.dkr.ecr.us-east-1.amazonaws.com/jumanji-node"
+export SERVICE_NAME=
+export SERVICE_TOKEN=
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+export ECR_REPOSITORY=
 export AWS_REGION="us-east-1"
 export ENVIRONMENT="staging"
 export WISHABI_ENVIRONMENT="development"
