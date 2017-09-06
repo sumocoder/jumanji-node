@@ -1,9 +1,9 @@
 cd ./deploy
 
 export SERVICE_NAME=
-export SERVICE_TOKEN=
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
+export SERVICE_TOKEN=
 export ECR_REPOSITORY=
 export AWS_REGION="us-east-1"
 export ENVIRONMENT="staging"
